@@ -1,0 +1,38 @@
+h2>categorias</h2>
+<section class="flex">
+<div>
+  <img class= "imgC" src="img/agricultura.jpg" alt="...">
+  <p>agricultura</p>
+</div>
+<div>
+  <img class= "imgC" src="img/animais.png" alt="...">
+  <p>animais</p>
+</div>
+<div>
+  <img class= "imgC" src="img/desporto.png" alt="...">
+  <p>desporto</p>
+</div>
+<div>
+  <img class= "imgC" src="img/criança.webp" alt="...">
+  <p>crianças</p>
+</div>
+<div>
+  <img class= "imgC" src="img/telemovel.jpg" alt="...">
+  <p>telemoveis e computadores</p>
+</div>
+<div>
+  <img class= "imgC" src="img/lazer.jpg" alt="...">
+  <p>lazer</p>
+</div>
+<div>
+  <img class= "imgC" src="img/roupa.png" alt="...">
+  <p>roupa</p>
+</div>
+<div>
+  <img class= "imgC" src="img/ferramentas.png" alt="...">
+  <p>ferramentas</p>
+</div>
+<div>
+  <img class= "imgC" src="img/outras vendas.png" alt="...">
+  <p>outros</p>
+</div>
