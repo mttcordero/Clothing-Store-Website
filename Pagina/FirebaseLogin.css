@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);*/
+*:focus {
+    outline: none;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #FEFEFE;
+    font-size: 26px;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  
+  img{
+    width: 400px;
+    height: 420px;
+    border-radius: 20px;
+  }
+
+  #login-box {
+    position: relative;
+    top: 10%;
+    margin: 5% auto;
+    width: 800px;
+    height: 500px;
+    background: #FEFEFE;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 10px;
+    height: 10px;
+  }
+  
+  h1 {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 38px;
+    color: #FF7A02;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 2px;
+    width: 260px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #FF7A02;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    transition: 0.1s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-bottom: 1px solid #FF7A02 ;
+    color: #FF7A02;
+    transition: 0.2s ease;
+    outline: 0;
+  }
+  
+  input[type="submit"] {
+    margin-top: 28px;
+    width: 120px;
+    height: 32px;
+    background: #FF7A02;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+  }
+  
+  .right {
+    position: absolute;
+    top: 50;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 360px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 2px 2px 0;
+  }
+  
+  #signUp{
+    background: #FFF;
+    color: #FF7A02;
+    margin-top: 50px;
+    text-align: left;
+    width: 200px;
+    font-size: 14px;
+  }
+
+  
+
+
+  

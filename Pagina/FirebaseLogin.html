@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Firebase Authentication</title>
+<link rel="stylesheet" href="FirebaseLogin.css">
+</head>
+
+<body>
+  
+<div id="login-box">
+  <div class="left">
+   <img src="img\login.jpg" alt="">
+  </div>
+  
+  <div class="right">
+    <h1 id='status'>Login</h1>
+    <input type="text" id="email" name="email" placeholder="E-mail" />
+    <input type="password" id="password" name="password" placeholder="Password" />
+    <input type="submit" id='login' name="login" value="login" />
+    <input type="submit" id='signUp' name="sign Up" value="signUp" />
+  </div>
+</div>
+</body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword,  signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDP5zYxtw0OODfmR1Il-ujSWSPQ0Wkp8HA",
+      authDomain: "authentication-app-ab8f1.firebaseapp.com",
+      databaseURL: "https://authentication-app-ab8f1-default-rtdb.firebaseio.com",
+      projectId: "authentication-app-ab8f1",
+      storageBucket: "authentication-app-ab8f1.appspot.com",
+      messagingSenderId: "609778728990",
+      appId: "1:609778728990:web:65533cefed28c51765ee0f"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+
+login.addEventListener('click',(e) => {
+
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    const user = userCredential.user;
+    location.href = "produtos.html";
+  })
+  
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    alert('email ou palavra-passe incorretos')
+  });
+});
+   
+document.getElementById("signUp").onclick = function () {
+        location.href = "FirebaseSignUp.html";
+    };
+
+  </script>
+
+</html>

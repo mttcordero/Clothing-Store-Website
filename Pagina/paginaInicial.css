@@ -44,6 +44,7 @@ html {
   visibility: hidden;
   font-weight: 500;
   font-size: 18px;
+  transition: var(--transition);
 }
 
 #btn-menu:checked ~ .container-menu{
@@ -65,12 +66,17 @@ html {
   padding: 25px;
   color: #FFFFFF;
   border-right: 5px solid transparent;
-  transition: all 200ms ease;
+  transition: all .04s ease;
 }
+
 .cont-menu nav a:hover{
   border-left:5px solid #FFFFFF;
   font-size: 20px;
 
+}
+
+.login:hover{
+  color: var(--orange);
 }
 
 label{
@@ -152,23 +158,20 @@ h2{
 }
 
 .home-button{
-  color: black;
-  border: 3px solid orange;
-  background-image: linear-gradient(to right,transparent 50%, orange 50%);
-  background-size: 200%;
-  background-position: 0%;
-  position: fixed;
-  top: 700px;
-  border: none;
+  color: white;
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid white;
   top: 80%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 200px;
   height: 40px;
-  font-size: 120%;
+  font-size: 22px;
 }
 
 .home-button:hover{
-  color: white;
-  background-position: 100%;
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  background-color: transparent;
 }
