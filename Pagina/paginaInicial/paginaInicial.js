@@ -117,4 +117,8 @@ if(window.innerWidth > 992) {
 			}
 		});
 	})
-}
+};
+
+document.getElementById("login").onclick = function () {
+  location.href = "/Pagina/login/Login.html";
+};

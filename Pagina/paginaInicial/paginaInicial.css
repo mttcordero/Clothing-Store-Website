@@ -445,6 +445,7 @@ footer .lower span a{
     text-align: left;
     box-sizing: border-box;
 }
+
 .banner{
     background-color:antiquewhite;
     height: calc(100vh - 106px);
@@ -677,7 +678,7 @@ footer .lower span a{
     top: 0;
     bottom: 0;
     margin: auto;
-    background-image: url(/img/arrow-link.svg);
+    background-image: url(/Pagina/img/arrow-link.svg);
     background-size: contain;
     background-repeat: no-repeat;
     transition: var(--transition);
