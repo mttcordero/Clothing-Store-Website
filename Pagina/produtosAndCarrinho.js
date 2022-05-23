@@ -141,17 +141,17 @@ function displayCart() {
     let productContainer = document.querySelector('.products');
     
     if( cartItems && productContainer ) {
-        productContainer.innerHTML = '';
+        productContainer.innerHTML = ''
         Object.values(cartItems).map( (item, index) => {
             productContainer.innerHTML += 
-            `<div class="product"><ion-icon name="close-circle"></ion-icon><img src="/js-shopping-cart-master/images/calcoes/${item.tag}.jpg" />
+            `<div class="product"><span name="close-circle"></ion-icon><img src="/Pagina/img/calcoes/${item.tag}.jpg" />
                 <span class="sm-hide">${item.name}</span>
-            </div>
+             </div>
             <div class="price sm-hide">${item.price},00€</div>
             <div class="quantity">
-                <ion-icon class="decrease " name="arrow-dropleft-circle"></ion-icon>
+                <button class="decrease ">-</button>
                     <span>${item.inCart}</span>
-                <ion-icon class="increase" name="arrow-dropright-circle"></ion-icon>   
+                <button class="increase">+</button>   
             </div>
             <div class="total">${item.inCart * item.price},00€</div>`;
         });
@@ -233,7 +233,9 @@ function deleteButtons() {
     }
 }
 
+document.getElementById("homePage").onclick = function () {
+    location.href = "/Pagina/paginaInicial/paginaInicial.html";
+};
+
 onLoadCartNumbers();
 displayCart();
-
-

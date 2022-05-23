@@ -193,7 +193,7 @@ li a {
   text-decoration: none;;
 }
 
-.cart ion-icon {
+.cart span {
  vertical-align: bottom;
  font-size: 20px;
  padding-right: 5px;
@@ -205,6 +205,17 @@ li a {
   cursor: pointer;
   text-decoration: none;
 }
+
+.cart ion-icon {
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+ }
+ 
+ .product ion-icon {
+   cursor: pointer;
+   
+ }
 
 .container,
 .container-products {
@@ -267,15 +278,7 @@ li a {
   max-width: 650px;
   justify-content: space-around;
   margin: 0 auto;
-  margin-top: 50px;
-}
-
-.container-products ion-icon {
-  font-size: 25px;
-  color: blue;
-  margin-left: 10px;
-  margin-right: 10px;
-  cursor: pointer;
+  margin-top: 300px;
 }
 
 .product-header {
@@ -321,7 +324,7 @@ li a {
   border-bottom: 1px solid lightgray;
 }
 
-.product ion-icon {
+.product span {
   cursor: pointer;
   
 }
