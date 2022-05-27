@@ -83,10 +83,10 @@ header .cart{
 header img{
   position: absolute;
   left: 30px;
-  width: 300px;
+  width: 200px;
   top: 10px;
   bottom: 10px;
-  height: 86px;
+  height: 80px;
   background-color: white;
 }
 
@@ -194,9 +194,10 @@ li a {
 }
 
 .cart span {
- vertical-align: bottom;
- font-size: 20px;
- padding-right: 5px;
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+  padding-top: 41px;
 }
 
 .cart a {
@@ -278,7 +279,7 @@ li a {
   max-width: 650px;
   justify-content: space-around;
   margin: 0 auto;
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .product-header {
@@ -286,8 +287,11 @@ li a {
   max-width: 650px;
   display: flex;
   justify-content: flex-start;
-  border-bottom: 4px solid lightgray;
-  margin: 0 auto;
+  border-bottom: 4px solid var(--lightgrey);
+  margin: 10px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  color: var(--darkgrey);
 }
 
 .product-title {
@@ -296,32 +300,28 @@ li a {
 
 .price {
   width: 15%;
-  border-bottom: 1px solid lightgray;
   display: flex;
   align-items: center;
 }
 
 .quantity {
   width: 30%;
-  border-bottom: 1px solid lightgray;
   display: flex;
   align-items: center;
 }
 
 .total {
   width: 10%;
-  border-bottom: 1px solid lightgray;
   display: flex;
   align-items: center;
 }
 
 .product {
-  width: 45%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid lightgray;
 }
 
 .product span {
@@ -333,6 +333,7 @@ li a {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .products img {
@@ -344,6 +345,7 @@ li a {
   justify-content: flex-end;
   width: 100%;
   padding: 10px 0;
+  color: var(--darkgrey);
 }
 
 .basketTotalTitle {
@@ -552,4 +554,53 @@ min-width: 100%;
 
 .banner .slider .youtube-button:hover{
   color: var(--grey);
+}
+
+.increase{
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  margin-left: 3px;
+  padding-bottom: 4px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.decrease{
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.fa-close:before, .fa-multiply:before, .fa-remove:before, .fa-times:before, .fa-xmark:before{
+  cursor: pointer;
+}
+
+.products span{
+  color: var(--darkgrey);
+}
+
+product i{
+  color: var(--darkgrey);
+}
+
+.product-header .price{
+  padding: 0;
+}
+
+.price{
+  padding-left: 40px;
+}
+
+.product-header .quantity{
+  padding-left: 30px;
+}
+
+.quantity{
+  padding-left: 60px;
 }

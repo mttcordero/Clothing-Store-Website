@@ -1,0 +1,58 @@
+[ 
+    {
+        "name": "Blue Shorts",
+        "tag": "blueshorts",
+        "category": "shorts",
+        "price": 15,
+        "inCart": 0
+    },
+    {
+        "name": "Green Shorts",
+        "tag": "greenshorts",
+        "category": "shorts",
+        "price": 20,
+        "inCart": 0
+    },
+    {
+        "name": "Grey Shorts",
+        "tag": "greyshorts",
+        "category": "shorts",
+        "price": 15,
+        "inCart": 0
+    },
+    {
+        "name": "Orange Shorts",
+        "tag": "orangeshorts",
+        "category": "shorts",
+        "price": 20,
+        "inCart": 0
+    },
+    {
+        "name": "Pink Shorts",
+        "tag": "pinkshorts",
+        "category": "shorts",
+        "price": 20,
+        "inCart": 0
+    },
+    {
+        "name": "Purple Shorts",
+        "tag": "purpleshorts",
+        "category": "shorts",
+        "price": 20,
+        "inCart": 0
+    },
+    {
+        "name": "Red Shorts",
+        "tag": "redshorts",
+        "category": "shorts",
+        "price": 20,
+        "inCart": 0
+    },
+    {
+        "name": "Yellow Shorts",
+        "tag": "yellowshorts",
+        "category": "shorts",
+        "price": 20,
+        "inCart": 0
+    }
+]
