@@ -1,4 +1,0 @@
-rgb(9, 19, 83) Navy
-rgb(157, 132, 183) Purple
-rgb(213, 213, 213) Grey
-rgb(178, 249, 252) Teal
